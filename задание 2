@@ -1,0 +1,32 @@
+#calculator benallal v1
+import math 
+what = input( "что делаем? (сложение, вычитание,умножение, деление, возведение в степень, округление в большую сторону, округление в меньшую сторон, логарифм): " )
+
+a= float( input("введи первое число: ") )
+b= float( input("введи второе число: ") )
+
+
+if what == "сложение":
+    c = a + b
+    print("результат: " + str(c))
+elif what == "вычитание":
+    c = a - b
+    print("результат: " + str(c))
+elif what == "умножение":
+    c = a * b
+    print("результат: " + str(c))
+elif what == "деление":
+    c = a / b
+    print("результат: " + str(c))
+elif what == "возведение в степень":
+    c = a ** b
+    print("результат: " + str(c))
+elif what == "округление в большую сторону":
+    print( math.ceil(a))
+elif what == "округление в меньшую сторону":
+    print( math.floor(a))
+elif what == "логарифм":
+    print( math.log(a))
+else:
+    print("выбрана неверная операция!")
+    
