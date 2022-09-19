@@ -1,0 +1,20 @@
+from math import sqrt
+def prime(x):
+    for i in range(2, int(sqrt(x))+1):
+        if x%i==0:
+            return False
+        else: return True
+
+
+
+a = [1,1,2,3,5]
+while len(a)<100:
+    a.append(a[-1]+a[-2])
+
+num = int(input())
+if prime(num) and num not in a:
+    print(num,"- простое")
+elif prime(num) and num in a:
+    print(num, " - и простое, и фибоначчи")
+elif num in a:
+    print(num, "- фибоначчи")
