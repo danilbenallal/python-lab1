@@ -1,0 +1,19 @@
+num = -12.5
+word = 'privet mir'
+string = 'danil'
+list = ['с', 'п', 'и', 'с', 'о', 'к']
+cort = ('к', 'o', 'р', 'т', 'е', 'ж')
+
+print(abs(num+num))
+
+
+print(word.isdigit())
+
+
+print(string.swapcase())
+
+
+print(list)
+
+
+print(len(cort))
